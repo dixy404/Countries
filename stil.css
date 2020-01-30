@@ -1,0 +1,19 @@
+#header{
+    background-image: url('globe.JPEG');
+    background-color: rgb(167, 234, 250);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 300px; 
+}
+
+
+#footer {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(167, 234, 250);
+    width: 100%;
+    height: 55px; 
+} 
+

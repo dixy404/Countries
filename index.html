@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Države</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <link rel="stylesheet" href="stil.css">
+    <script src="B4_script.js"></script>
+</head>
+
+<body onload="ucitajDrzave('europe')">
+
+    <div class="jumbotron text-center" id="header">
+
+    </div>
+
+
+    <div class="container">
+        <div class="col-lg-5 col-md-4">
+            <h4>Odaberite grad</h4>
+            <select   class="form-control" id="gradovi" onchange="unesiNazivDrzave(this.value)"></select> 
+            
+            <br><br>
+            
+            <h4>Spisak država koje imaju manje od 5 000 000 stanovnika za izabrani region:</h4>
+            <ol id="drzave">
+            </ol>
+           
+        </div>
+
+
+        <div class="col-lg-7 col-md-8">
+           <h4>Najvše stanovnika imaju države:</h4>
+            <ul class="list-group" id="top5">
+            </ul> 
+
+            <br>
+
+           <h4>Izabrani region ukupno ima:</h4>        
+           <p id="broj-drzava"></p> 
+           <p id="ukupan-broj-stanovnika"></p>
+       
+        </div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+        <p>&copy; Dijana Pejić </p>
+    </div>
+
+</body>
+
+</html>
